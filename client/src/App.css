@@ -1,1 +1,12 @@
 
+:root {
+  --accent-dark-blue: #252E78;    /*information icon color*/
+  --primary-light-brown: #FDECD2; /*Background color*/
+  --accent-medium-brown: #DAAA63; /*Mobile tools section background coor*/
+  --accent-dark-brown: #2C1810;   /*Text color*/
+  --accent-orange: #FCA72C;       /*Desktop button color*/
+
+  --Header-Desktop-Font-Size: 30px;
+  --Header-Mobile-Font-Size: 20px;
+  --Paragraph-Text-Font-Size: 16px;
+}
