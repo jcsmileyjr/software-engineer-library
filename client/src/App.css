@@ -10,3 +10,9 @@
   --Header-Mobile-Font-Size: 20px;
   --Paragraph-Text-Font-Size: 16px;
 }
+
+.app--container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

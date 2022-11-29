@@ -5,6 +5,7 @@
     margin: 10px 0;
     color: var(--accent-dark-brown);
     font-size: var(--Header-Mobile-Font-Size);
+    flex:1;
 }
 
 .title__topLine--style {
