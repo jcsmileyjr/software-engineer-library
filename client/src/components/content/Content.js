@@ -1,9 +1,19 @@
 import "./content.css";
+import Book from '../book/Book.js';
 
 const Content = () => {
     return (
         <section className="content--container">
-            Books
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
         </section>
     )
 }
