@@ -7,8 +7,10 @@
   --accent-orange: #FCA72C;       /*Desktop button color*/
 
   --Header-Desktop-Font-Size: 30px;
-  --Header-Mobile-Font-Size: 20px;
-  --Paragraph-Text-Font-Size: 16px;
+  --Header-Mobile-Font-Size: 16px;
+  --Paragraph-Text-Font-Size: 14px;
+  --Header-font-style: 'Microsoft Sans Serif';
+  --Paragraph-font-style: 'Lucida Bright';
 }
 
 .app--container {

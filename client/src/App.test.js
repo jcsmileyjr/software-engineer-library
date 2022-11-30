@@ -7,7 +7,7 @@ test("renders the app's title", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-xtest("renders a book's title 'React Testing Library – Tutorial with JavaScript Code Examples'", () => {
+test("renders a book's title 'React Testing Library – Tutorial with JavaScript Code Examples'", () => {
   render(<App />);
   const linkElement = screen.getByText(/React Testing Library – Tutorial with JavaScript Code Examples/i);
   expect(linkElement).toBeInTheDocument();
