@@ -17,6 +17,11 @@
     font-family: var(--Paragraph-font-style)
 }
 
+.book__title--container {
+    display: flex;
+    justify-content: end;
+}
+
 .book--container .book__title--style {
     font-size: var(--Header-Mobile-Font-Size);
     text-align: center;
@@ -31,4 +36,9 @@ hr {
     margin-right: auto;
     border-color: var(--accent-medium-brown);
     margin-bottom:10px;
+}
+
+.book__detailIcon--style {
+    max-height: 15px;
+    margin: 5px;
 }
