@@ -1,3 +1,7 @@
 .mobileTools--container {
     flex:1;
+    background-color: var(--accent-medium-brown);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

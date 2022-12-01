@@ -1,0 +1,16 @@
+
+.toolsButton--style {
+    flex: 1;
+    max-width: 30vw;
+    padding: 7px;
+    font-size: 12px;
+    font-family: var(--Paragraph-font-style);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolsButtonIcon--style {
+    max-height: 15px;
+    margin-right: 10px;
+}
