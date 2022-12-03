@@ -11,7 +11,7 @@
 }
 
 .book--container > p {
-    font-size: var(--Paragraph-Text-Font-Size);
+    font-size: 3.5vw;
     margin:2px 0 2px 5px;
     word-wrap:break-word;
     font-family: var(--Paragraph-font-style)

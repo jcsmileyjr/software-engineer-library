@@ -1,0 +1,9 @@
+.rating--container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+}
+
+.ratingStar--container {
+    display: flex;
+}

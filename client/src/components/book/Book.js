@@ -1,7 +1,10 @@
 import "./book.css";
 import Details from "../../assets/details-library.png";
+import Rating from "../rating/Rating";
 
 const Book = () => {
+
+    const testRating = {numberOfStars:3, numberOfRating: 144}
     return(
         <div className="book--container">
             <div className="book__title--container">
@@ -13,6 +16,7 @@ const Book = () => {
             <p>MARCH 7, 2021</p>
             <p>www.freecodecamp.org</p>
             <p>Testing</p>
+            <Rating rating={testRating} />
         </div>
     )
 }
