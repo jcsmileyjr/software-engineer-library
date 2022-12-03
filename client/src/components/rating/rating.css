@@ -1,9 +1,39 @@
 .rating--container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     margin-top: 2px;
+}
+
+.rating--container > p {
+    font-size: 3.5vw;
 }
 
 .ratingStar--container {
     display: flex;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width:500px){
+    .rating--container > p {
+        font-size: 2.4vw;
+    }
+}
+
+@media only screen and (min-width:600px){
+    .rating--container > p {
+        font-size: 1.8vw;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .rating--container > p {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width:1300px){
+    .rating--container > p {
+        font-size: 1vw;
+    }
 }
