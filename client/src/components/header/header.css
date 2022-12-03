@@ -2,7 +2,7 @@
 .header--container {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    padding: 10px 0;
     color: var(--accent-dark-brown);
     font-size: var(--Header-Mobile-Font-Size);
     font-family: var(--Header-font-style);
@@ -35,5 +35,6 @@
 
     .header--container {
         justify-content: space-around;
+        background-color: var(--accent-medium-brown);
     }
 }
