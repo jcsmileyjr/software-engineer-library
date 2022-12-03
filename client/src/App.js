@@ -8,7 +8,9 @@ function App() {
     <div className="app--container">
       <Header />
       <Content />
-      <MobileTools />
+      <div className="showToolsInWideScreen">
+        <MobileTools />
+      </div>
     </div>
   );
 }

@@ -16,3 +16,24 @@
 .title__bottomLine--style {
     margin-left: 20px;
 }
+
+.title--container {
+    flex: 1;
+    text-align: center;
+}
+
+.showTools {
+    display: none;
+}
+
+@media only screen and (min-width:500px){
+    .showTools{
+        display: flex;
+        flex: 2;
+        margin-right: 10px;
+    }
+
+    .header--container {
+        justify-content: space-around;
+    }
+}
