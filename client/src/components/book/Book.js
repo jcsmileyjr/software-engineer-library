@@ -3,18 +3,18 @@ import Details from "../../assets/details-library.png";
 import Rating from "../rating/Rating";
 import AddToFavorties from "../addToFavorites/AddToFavorites";
 import EditBook from "../editBook/EditBook";
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
+// const customStyles = {
+//   content: {
+//     top: '50%',
+//     left: '50%',
+//     right: 'auto',
+//     bottom: 'auto',
+//     marginRight: '-50%',
+//     transform: 'translate(-50%, -50%)',
+//   },
+// };
 
 const Book = () => {
 
