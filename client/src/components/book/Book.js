@@ -1,7 +1,8 @@
 import "./book.css";
 import Details from "../../assets/details-library.png";
 import Rating from "../rating/Rating";
-
+import AddToFavorties from "../addToFavorites/AddToFavorites";
+import EditBook from "../editBook/EditBook";
 const Book = () => {
 
     const testRating = {numberOfStars:3, numberOfRating: 144}
@@ -18,8 +19,11 @@ const Book = () => {
                 <Rating rating={testRating} />
             </div>
             <div className="detailsInformation--container">
+                <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
                 <Rating rating={testRating} />
-                Hello World
+                <AddToFavorties />
+                <EditBook />
+                
             </div>
         </div>
     )

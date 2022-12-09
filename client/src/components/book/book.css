@@ -9,7 +9,7 @@
     color: var(--accent-dark-brown);
 }
 
-.book--container .bookInformation--container  > p {
+.book--container > p, .bookInformation--container  > p {
     font-size: 3.5vw;
     margin:2px 0 2px 5px;
     word-wrap:break-word;
@@ -49,6 +49,7 @@ hr {
 
 .book--container:hover .detailsInformation--container {
     display: block;
+    margin-top: 25px
 }
 
 @media only screen and (min-width:500px){
