@@ -1,0 +1,37 @@
+.book__editBookIcon--style {
+    max-height: 15px;
+    max-width: 15px;
+    margin: 5px;
+}
+
+.editBook--container {
+    max-width: 43vw;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    max-height: 210px;
+    padding: 5px;
+    background-color: white;
+    color: var(--accent-dark-brown);
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.editBook--container > p {
+    font-size: 3.5vw;
+    margin:2px 0 2px 5px;
+    word-wrap:break-word;
+    font-family: var(--Paragraph-font-style)
+}
+
+@media only screen and (min-width:500px){
+    .editBook--container{
+       max-width: 200px;
+    }
+
+    .editBook--container  > p {
+        font-size: 14px;
+    }
+
+}
