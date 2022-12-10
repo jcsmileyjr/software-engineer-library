@@ -1,7 +1,7 @@
 .book__editBookIcon--style {
     max-height: 15px;
     max-width: 15px;
-    margin: 5px;
+    margin: 5px 15px 5px 5px;
 }
 
 .editBook--container {
