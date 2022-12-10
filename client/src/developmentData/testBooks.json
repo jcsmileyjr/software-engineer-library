@@ -1,0 +1,38 @@
+[
+    {
+        "bookID": 1,
+        "title":"React Testing Library – Tutorial with JavaScript Code Examples",
+        "author": "Nathan Sebhastian",
+        "date":"March 7, 2021",
+        "platform":"www.freecodecamp.org",
+        "category":"Testing",
+        "rating": {
+            "numberOfStars":3, 
+            "numberOfRating": 144
+        }
+    },
+    {
+        "bookID": 2,
+        "title":"React Testing Library – Tutorial with JavaScript Code Examples",
+        "author": "Nathan Sebhastian",
+        "date":"March 7, 2021",
+        "platform":"www.freecodecamp.org",
+        "category":"Testing",
+        "rating": {
+            "numberOfStars":3, 
+            "numberOfRating": 144
+        }
+    },
+    {
+        "bookID": 3,
+        "title":"React Testing Library – Tutorial with JavaScript Code Examples",
+        "author": "Nathan Sebhastian",
+        "date":"March 7, 2021",
+        "platform":"www.freecodecamp.org",
+        "category":"Testing",
+        "rating": {
+            "numberOfStars":3, 
+            "numberOfRating": 144
+        }
+    }
+]

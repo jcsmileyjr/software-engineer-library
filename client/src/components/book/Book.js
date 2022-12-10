@@ -16,9 +16,7 @@ import EditBook from "../editBook/EditBook";
 //   },
 // };
 
-const Book = () => {
-
-    const testRating = {numberOfStars:3, numberOfRating: 144}
+const Book = ({bookData}) => {
     return(
         <div className="book--container">
             <img className="book__detailIcon--style" src={Details} alt="Hover or click to display more options" />
@@ -29,13 +27,13 @@ const Book = () => {
                 <p>MARCH 7, 2021</p>
                 <p>www.freecodecamp.org</p>
                 <p>Testing</p>
-                <Rating rating={testRating} />
+                <Rating rating={bookData.rating} />
             </div>
             <div className="detailsInformation--container">
                 <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
                 <AddToFavorties />
                 <EditBook />
-                <Rating rating={testRating} />
+                <Rating rating={bookData.rating} />
                 
             </div>
         </div>
