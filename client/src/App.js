@@ -17,6 +17,7 @@ function App() {
   const getUsersSoftwarLibraryData = () => {
     if(localStorage.getItem("userSoftwareLibraryData") === null){
       localStorage.setItem("userSoftwareLibraryData", JSON.stringify(UserDataSchema));
+      setLocalUserData(UserDataSchema);
     }else{
       const userData = JSON.parse(localStorage.getItem("userSoftwareLibraryData"));
       setLocalUserData(userData);
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="app--container">
       <Header />
-      <Content books={Books} />
+      <Content books={Books} localData={localUserData} />
       <div className="showToolsInWideScreen">
         <MobileTools />
       </div>

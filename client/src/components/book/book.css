@@ -32,11 +32,23 @@ hr {
     margin-bottom:15px;
 }
 
+.book__icons--container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .book__detailIcon--style {
     max-height: 15px;
     max-width: 15px;
     margin: 5px;
     align-self: self-end;
+}
+
+.book__heartIcon--style {
+    max-height: 15px;
+    max-width: 15px;
+    margin: 5px;
+    align-self: self-start;
 }
 
 .detailsInformation--container {
@@ -50,6 +62,10 @@ hr {
 .book--container:hover .detailsInformation--container {
     display: block;
     margin-top: 25px
+}
+
+.hide {
+    visibility: hidden;
 }
 
 @media only screen and (min-width:500px){

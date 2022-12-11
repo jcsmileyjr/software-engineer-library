@@ -1,5 +1,6 @@
 import "./book.css";
 import Details from "../../assets/details-library.png";
+import Heart from "../../assets/heart.svg";
 import Rating from "../rating/Rating";
 import AddToFavorties from "../addToFavorites/AddToFavorites";
 import EditBook from "../editBook/EditBook";
@@ -16,10 +17,13 @@ import EditBook from "../editBook/EditBook";
 //   },
 // };
 
-const Book = ({bookData}) => {
+const Book = ({bookData, favorite, updateList}) => {
     return(
         <div className="book--container">
-            <img className="book__detailIcon--style" src={Details} alt="Hover or click to display more options" />
+            <div className="book__icons--container">
+                <img className={`book__heartIcon--style ${favorite? "":"hide"}`} src={Heart} alt="" />
+                <img className="book__detailIcon--style" src={Details} alt="Hover or click to display more options" />
+            </div>
             <div className="bookInformation--container">
                 <p className="book__title--style">{bookData.title}</p>
                 <hr />
@@ -31,7 +35,7 @@ const Book = ({bookData}) => {
             </div>
             <div className="detailsInformation--container">
                 <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
-                <AddToFavorties bookID={bookData.bookID} />
+                <AddToFavorties bookID={bookData.bookID} updateList={updateList} />
                 <EditBook />
                 <Rating rating={bookData.rating} />
                 
