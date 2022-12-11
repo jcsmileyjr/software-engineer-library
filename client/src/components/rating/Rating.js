@@ -10,7 +10,7 @@ const Rating = ({rating}) => {
 
                 {
                     arrayOfStars.map((star, id) => (
-                        <img src={Star} alt="" />
+                        <img src={Star} alt="" key={id} />
                     ))
                 }
             </div>

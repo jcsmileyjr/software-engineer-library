@@ -21,17 +21,17 @@ const Book = ({bookData}) => {
         <div className="book--container">
             <img className="book__detailIcon--style" src={Details} alt="Hover or click to display more options" />
             <div className="bookInformation--container">
-                <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
+                <p className="book__title--style">{bookData.title}</p>
                 <hr />
-                <p>Nathan Sebhastian</p>
-                <p>MARCH 7, 2021</p>
-                <p>www.freecodecamp.org</p>
-                <p>Testing</p>
+                <p>{bookData.author}</p>
+                <p>{bookData.date}</p>
+                <p>{bookData.platform}</p>
+                <p>{bookData.category}</p>
                 <Rating rating={bookData.rating} />
             </div>
             <div className="detailsInformation--container">
                 <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
-                <AddToFavorties />
+                <AddToFavorties bookID={bookData.bookID} />
                 <EditBook />
                 <Rating rating={bookData.rating} />
                 
