@@ -35,7 +35,7 @@ const Book = ({bookData, favorite, updateList}) => {
             </div>
             <div className="detailsInformation--container">
                 <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
-                <AddToFavorties bookID={bookData.bookID} updateList={updateList} />
+                <AddToFavorties bookID={bookData.bookID} updateList={updateList} favorite={favorite} />
                 <EditBook />
                 <Rating rating={bookData.rating} />
                 

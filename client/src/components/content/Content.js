@@ -45,7 +45,7 @@ const Content = ({ books, localData }) => {
         if (listOfFavorites.findIndex((id) => id === book.bookID) > -1) {
           return <Book key={book.bookID} bookData={book} favorite={true} updateList={updateUserLocalData} />;
         } else {
-          return <Book key={book.bookID} bookData={book} updateList={updateUserLocalData} />;
+          return <Book key={book.bookID} bookData={book} favorite={false} updateList={updateUserLocalData} />;
         }
       })}
     </section>
