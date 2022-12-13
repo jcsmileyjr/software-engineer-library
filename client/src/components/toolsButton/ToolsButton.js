@@ -3,9 +3,9 @@ import AddIcon from '../../assets/add-icon.png';
 import ListIcon from '../../assets/list-icon.png';
 import SortIcon from '../../assets/sort-icon.png';
 
-const ToolsButton = ({title, imageType}) => {
+const ToolsButton = ({title, imageType, action}) => {
     return(
-        <button type="button" className="toolsButton--style">
+        <button type="button" className="toolsButton--style" onClick={() => action()}>
             {imageType==="add" && 
                 <img src={AddIcon} alt="Add icon" className="toolsButtonIcon--style" />
             }
