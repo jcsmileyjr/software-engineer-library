@@ -2,7 +2,7 @@ import "./content.css";
 import Book from "../book/Book.js";
 import React, { useState, useEffect } from "react";
 
-const Content = ({ books, localData }) => {
+const Content = ({ books, showFavorites }) => {
   const [listOfFavorites, setListOfFavorites] = useState([]);
 
   useEffect(() => {
@@ -45,7 +45,9 @@ const Content = ({ books, localData }) => {
         if (listOfFavorites.findIndex((id) => id === book.bookID) > -1) {
           return <Book key={book.bookID} bookData={book} favorite={true} updateList={updateUserLocalData} />;
         } else {
-          return <Book key={book.bookID} bookData={book} favorite={false} updateList={updateUserLocalData} />;
+            if(!showFavorites){
+                return <Book key={book.bookID} bookData={book} favorite={false} updateList={updateUserLocalData} />;
+            }
         }
       })}
     </section>

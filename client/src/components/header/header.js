@@ -1,7 +1,7 @@
 import "./header.css";
 import MobileTools from "../mobileTools/MobileTools";
 
-const Header = () => {
+const Header = ({viewList}) => {
     return(
         <section className="header--container">
             <div className="title--container">
@@ -10,7 +10,7 @@ const Header = () => {
                 <p className="title__bottomLine--style">Library</p>
             </div>
             <div className="showTools">
-                <MobileTools />
+                <MobileTools viewList={viewList} />
             </div>
         </section>
     )
