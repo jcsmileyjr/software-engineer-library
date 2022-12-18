@@ -14,6 +14,12 @@ function App() {
     getUsersSoftwarLibraryData();
   }, []);
 
+  /**
+   * Update the selected book's rating within the Rating component
+   * @param {number} selectedBookID - Book ID of the selected book
+   * 
+   * TODO: Update via API and local app state
+   */
   const recommendBook = (selectedBookID) => {
     setBooks(books.map((book) => {
       if(book.bookID === selectedBookID){
@@ -25,11 +31,17 @@ function App() {
     }))
   }
 
+  // Displays the user's list of favorite books
   const onViewList = () => {
     setShowFavorites(!showFavorites);
   }
 
-  //check if there is a saved local data, if not create one.
+  /**
+   * When the app first loads, saves the develpment array of books to the the app state
+   * and loads the user preference setting format to local storage
+   * 
+   * TODO: API call get library of books from external database
+   */
   const getUsersSoftwarLibraryData = () => {
     setBooks(Books);
     if(localStorage.getItem("userSoftwareLibraryData") === null){
