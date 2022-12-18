@@ -3,7 +3,7 @@ import Details from "../../assets/details-library.png";
 import Heart from "../../assets/heart.svg";
 import Rating from "../rating/Rating";
 import AddToFavorties from "../addToFavorites/AddToFavorites";
-import EditBook from "../editBook/EditBook";
+//import EditBook from "../editBook/EditBook";
 // import Modal from 'react-modal';
 
 // const customStyles = {
@@ -17,7 +17,7 @@ import EditBook from "../editBook/EditBook";
 //   },
 // };
 
-const Book = ({bookData, favorite, updateList}) => {
+const Book = ({bookData, favorite, updateList, starBook}) => {
     return(
         <div className="book--container">
             <div className="book__icons--container">
@@ -36,7 +36,7 @@ const Book = ({bookData, favorite, updateList}) => {
             <div className="detailsInformation--container">
                 <p className="book__title--style">React Testing Library – Tutorial with JavaScript Code Examples</p>
                 <AddToFavorties bookID={bookData.bookID} updateList={updateList} favorite={favorite} />
-                <Rating rating={bookData.rating} />
+                <Rating starBook={starBook} rating={bookData.rating} />
                 
             </div>
         </div>

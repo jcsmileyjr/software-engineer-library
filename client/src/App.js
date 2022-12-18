@@ -8,10 +8,22 @@ import UserDataSchema from "./developmentData/userDataSchema.json";
 
 function App() {
   const [showFavorites, setShowFavorites] = useState(false);
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
     getUsersSoftwarLibraryData();
   }, []);
+
+  const recommendBook = (selectedBookID) => {
+    setBooks(books.map((book) => {
+      if(book.bookID === selectedBookID){
+        book.rating.numberOfRating += 1;
+        return book;
+      }else{
+        return book;
+      }
+    }))
+  }
 
   const onViewList = () => {
     setShowFavorites(!showFavorites);
@@ -19,6 +31,7 @@ function App() {
 
   //check if there is a saved local data, if not create one.
   const getUsersSoftwarLibraryData = () => {
+    setBooks(Books);
     if(localStorage.getItem("userSoftwareLibraryData") === null){
       localStorage.setItem("userSoftwareLibraryData", JSON.stringify(UserDataSchema));
     }
@@ -27,7 +40,7 @@ function App() {
   return (
     <div className="app--container">
       <Header viewList={onViewList} />
-      <Content books={Books} showFavorites={showFavorites} />
+      <Content starBook={recommendBook} books={books} showFavorites={showFavorites} />
       <div className="showToolsInWideScreen">
         <MobileTools viewList={onViewList} />
       </div>

@@ -1,12 +1,12 @@
 import './rating.css';
 import Star from '../../assets/icon-star.svg';
 
-const Rating = ({rating}) => {
+const Rating = ({rating, starBook}) => {
     const arrayOfStars = Array(rating.numberOfStars).fill(0);
     return (
         <div className="rating--container">
-            <p>{rating.numberOfRating}</p>
-            <div className="ratingStar--container">
+            <div className="ratingStar--container" onClick={starBook}>
+                <p className='ratingNumber--style'>{rating.numberOfRating}</p>
 
                 {
                     arrayOfStars.map((star, id) => (
@@ -14,6 +14,9 @@ const Rating = ({rating}) => {
                     ))
                 }
             </div>
+            <p className='ratingHint--container'><span className='ratingHint--style'>Click to add a STAR</span></p>
+            
+            
         </div>
     )
 }
