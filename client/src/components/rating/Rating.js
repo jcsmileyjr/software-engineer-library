@@ -1,11 +1,11 @@
 import './rating.css';
 import Star from '../../assets/icon-star.svg';
 
-const Rating = ({rating}) => {
+const Rating = ({rating, starBook}) => {
     const arrayOfStars = Array(rating.numberOfStars).fill(0);
     return (
         <div className="rating--container">
-            <div className="ratingStar--container">
+            <div className="ratingStar--container" onClick={starBook}>
                 <p className='ratingNumber--style'>{rating.numberOfRating}</p>
 
                 {

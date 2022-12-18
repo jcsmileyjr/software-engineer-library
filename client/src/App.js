@@ -14,6 +14,17 @@ function App() {
     getUsersSoftwarLibraryData();
   }, []);
 
+  const recommendBook = (selectedBookID) => {
+    setBooks(books.map((book) => {
+      if(book.bookID === selectedBookID){
+        book.rating.numberOfRating += 1;
+        return book;
+      }else{
+        return book;
+      }
+    }))
+  }
+
   const onViewList = () => {
     setShowFavorites(!showFavorites);
   }
@@ -29,7 +40,7 @@ function App() {
   return (
     <div className="app--container">
       <Header viewList={onViewList} />
-      <Content books={books} showFavorites={showFavorites} />
+      <Content starBook={recommendBook} books={books} showFavorites={showFavorites} />
       <div className="showToolsInWideScreen">
         <MobileTools viewList={onViewList} />
       </div>

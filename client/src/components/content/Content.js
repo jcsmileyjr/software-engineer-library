@@ -2,7 +2,7 @@ import "./content.css";
 import Book from "../book/Book.js";
 import React, { useState, useEffect } from "react";
 
-const Content = ({ books, showFavorites }) => {
+const Content = ({ books, showFavorites, starBook }) => {
   const [listOfFavorites, setListOfFavorites] = useState([]);
 
   useEffect(() => {
@@ -43,10 +43,10 @@ const Content = ({ books, showFavorites }) => {
     <section className="content--container">
       {books.map((book) => {
         if (listOfFavorites.findIndex((id) => id === book.bookID) > -1) {
-          return <Book key={book.bookID} bookData={book} favorite={true} updateList={updateUserLocalData} />;
+          return <Book starBook={() => starBook(book.bookID)} key={book.bookID} bookData={book} favorite={true} updateList={updateUserLocalData} />;
         } else {
             if(!showFavorites){
-                return <Book key={book.bookID} bookData={book} favorite={false} updateList={updateUserLocalData} />;
+                return <Book starBook={() => starBook(book.bookID)} key={book.bookID} bookData={book} favorite={false} updateList={updateUserLocalData} />;
             }
         }
       })}
