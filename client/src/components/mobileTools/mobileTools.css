@@ -6,6 +6,41 @@
     align-items: center;
 }
 
+.mobileTools__openBookModal--container > h2 {
+    align-self: center;
+}
+
+.mobileTools__openBookModal--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.openBookModal__input--container > input {
+    margin: 5px 0;
+    border: 1px solid black;
+}
+
+.openBookModal__input--containerr > input:focus {
+    background-color: whitesmoke;
+}
+
+.openBookModal__input--container > input:focus + label {
+    color: blue;
+}
+
+.openBookModal__input--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.openBookModal__input--container label {
+    order: 1;
+}
+
+.openBookModal__input--container input {
+    order: 2;
+}
+
 @media only screen and (min-width:500px){
     .mobileTools--container {
         justify-content: flex-end;
